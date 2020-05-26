@@ -1,3 +1,7 @@
+import RxCocoa
+import RxSwift
+import Kingfisher
+
 extension Reactive where Base: ImageCache {
     public func retrieveCacheSize() -> Observable<Int> {
         return Single.create { single in
